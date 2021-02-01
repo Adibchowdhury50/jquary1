@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+    <div class="main-div">
+
+            <h1>calculator</h1>
+            <div class="middle">
+                <input type="text" class="txt" id="result" maxlength="10" >
+            </div>
+            <div class="calculation">
+                 <!-- first slot start -->
+            <div>
+                <input type="button" value="c" class="btn" onclick="clearAll()"></input>
+                <input type="button" value="+/-" class="btn"></input>
+                <input type="button" value="%" class="btn"></input>
+                <input type="button" value="/" class="btn" onclick="insertNumber('/')"></input>
+            </div>
+             <!-- first slot end -->
+             <!-- second slot start -->
+            <div>
+                <input type="button" value="7" class="btn" onclick="insertNumber(7)"></input>
+                <input type="button" value="8" class="btn" onclick="insertNumber(8)"></input>
+                <input type="button" value="9" class="btn" onclick="insertNumber(9)"></input>
+                <input type="button" value="*" class="btn" onclick="insertNumber('*')" ></input>
+            </div>
+             <!-- second slot end -->
+             <!--third slot start -->
+            <div>
+                <input type="button" value="4" class="btn" onclick="insertNumber(4)"></input>
+                <input type="button" value="5" class="btn" onclick="insertNumber(5)"></input>
+                <input type="button" value="6" class="btn" onclick="insertNumber(6)"></input>
+                <input type="button" value="-" class="btn" onclick="insertNumber('-')" ></input>
+            </div>
+             <!-- third slot end -->
+             <!-- fourth slot start -->
+            <div>
+                <input type="button" value="1" class="btn" onclick="insertNumber(1)"></input>
+                <input type="button" value="2" class="btn" onclick="insertNumber(2)"></input>
+                <input type="button" value="3" class="btn" onclick="insertNumber(3)"></input>
+                <input type="button" value="+" class="btn" onclick="insertNumber('+')" ></input>
+            </div>
+             <!-- fourth slot end -->
+             <!-- last slot start -->
+            <div>
+                <input type="button" value="0" class="btn" onclick="insertNumber(0)"></input>
+                <input type="button" value="." class="btn" onclick="insertNumber('.')"></input>
+                <input type="button" value="DEL" class="btn" onclick="deleteNumbers()" ></input>
+                <input type="button" value="=" class="btn" onclick="calculate()"></input>
+            </div>
+             <!-- last slot end -->
+
+            </div>
+
+
+
+
+
+
+
+
+    </div>
+    
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="calculator.js"></script>
+</body>
+</html>
